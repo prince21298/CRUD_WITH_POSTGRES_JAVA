@@ -1,5 +1,9 @@
-package com.sql_crud.sql_crud.model;
+package com.sql_crud.sql_crud.responseHandlers;
+
 import java.util.List;
+
+import com.sql_crud.sql_crud.model.Person;
+
 public class ResponseHandler {
     private boolean success;
     private List<Person> data;
@@ -9,21 +13,24 @@ public class ResponseHandler {
         this.data = data;
     }
 
-    public ResponseHandler(boolean success){
+    public ResponseHandler(boolean success) {
         this.success = success;
     }
+
     public boolean isSuccess() {
         return success;
     }
+
     public void setSuccess(boolean success) {
         this.success = success;
     }
+
     public List<Person> getData() {
         return data;
     }
+
     public void setData(List<Person> data) {
         this.data = data;
     }
-    
 
 }
