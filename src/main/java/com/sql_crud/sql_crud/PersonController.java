@@ -18,6 +18,7 @@ public class PersonController {
     @Autowired
     PerssonRepo repo;
 
+    @SuppressWarnings("null")
     @PostMapping("/add")
     public ResponseHandler addPerson(@RequestBody Person person) {
         try{
